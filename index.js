@@ -3,7 +3,7 @@ const path = require('path');
 const {mimeTypes} = require('./utilities/mime');
 const {staticFile} = require('./utilities/static_file');
 // const PORT = process.env.PORT
-const PORT = 3500;
+const PORT = process.env.PORT || 3500;
 const HOSTNAME = "0.0.0.0"
 
 http.createServer(function(req, res){
